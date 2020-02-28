@@ -1,8 +1,8 @@
-# gif2xlsx
+# excel-maze-generator
 This spreadsheet generates mazes for you to print, and your children to complain about how they're not as good as the ones that you get in the pub.
 
 # Short instructions
-1. Download [mazegenerator.xlsx](https://github.com/pugwonk/excel-maze-generator/raw/master/mazegenerator.xlsx)
+1. Download [mazegenerator.xlsm](https://github.com/pugwonk/excel-maze-generator/raw/master/mazegenerator.xlsm)
 1. Go to the "maze" tab
 1. Click "make new one"
 1. Go and make a cup of tea (press Escape to cancel if you get really fed up)
@@ -22,8 +22,9 @@ It scores the path by using the Square Scores grid - paths that go right through
 ![](https://github.com/pugwonk/excel-maze-generator/raw/master/square-scores.png)
 
 The two parameters you can edit are:
-* LineProb - the probability of any grid cell having a left or top border on it. Basically the complexity of the maze (higher is more complex, lower is more sparse)
-* MaxScore - the highest score you will accept as a valid maze for the macro to stop running (low scores are good, high scores are bad).
+* `LineProb` - the probability of any grid cell having a left or top border on it. Basically the complexity of the maze (higher is more complex, lower is more sparse)
+* `MaxScore` - the highest score you will accept as a valid maze for the macro to stop running (low scores are good, high scores are bad).
+
 Changing either of these parameters may result in better mazes but the macro could take a long time to run. This is not the most efficient way to make a maze.
 
 The spreadsheet does have a macro in it, but the core logic is in the spreadsheet itself. To generate a maze without using macros:
@@ -32,4 +33,5 @@ The spreadsheet does have a macro in it, but the core logic is in the spreadshee
 1. On the "path" sheet, change Reset to be 0 and then shift-F9 a few times until new cells stop populating in the Path grid
 1. If there is a number next to "END" in the Path grid, the maze is solvable
 1. If the score is nice and low it's a decent maze
+
 You may have to do this several hundred times before you get a reasonable maze out of it, hence the macro to just perform the above steps.
