@@ -1,8 +1,10 @@
 # excel-maze-generator
 This spreadsheet generates mazes for you to print, and your children to complain about how they're not as good as the ones that you get in the pub.
 
+![](https://github.com/pugwonk/excel-maze-generator/raw/master/result.jpg)
+
 # Short instructions
-1. Download [mazegenerator.xlsm](https://github.com/pugwonk/excel-maze-generator/raw/master/mazegenerator.xlsm)
+1. Download [mazegenerator.xlsm](https://github.com/pugwonk/excel-maze-generator/raw/master/mazegenerator.xlsm) for a 15x15 grid or [mazegenerator-large.xlsm](https://github.com/pugwonk/excel-maze-generator/raw/master/mazegenerator-large.xlsm) for a 25x25 grid
 1. Go to the "maze" tab
 1. Click "make new one"
 1. Go and make a cup of tea (press Escape to cancel if you get really fed up)
